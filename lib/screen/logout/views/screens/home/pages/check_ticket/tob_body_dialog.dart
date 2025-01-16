@@ -28,7 +28,7 @@ class TobBodyDialog extends StatelessWidget {
               ),
             ),
             Text(
-              "We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket (by) We are happy to redirect you to Camboticket",
+              "All information on the wingbank.com.kh website is published in good faith and for general information purposes only. Wing Bank makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. In no event will Wing Bank be liable for any loss or damage including, without limitation, indirect or consequential loss or damage,",
               style: TextStyle(
                 fontSize: 15.sp,
               ),
