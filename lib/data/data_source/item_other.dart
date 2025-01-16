@@ -1,0 +1,51 @@
+class Item {
+  final String text;
+  final String imagePath;
+
+  Item(this.text, this.imagePath);
+}
+
+final List<Item> items = [
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+  Item("BS Printing Supplies Material (KHR)", "assets/flags/cambodia.png"),
+];
