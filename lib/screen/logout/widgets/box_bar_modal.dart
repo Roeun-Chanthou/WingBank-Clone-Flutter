@@ -9,7 +9,7 @@ class BoxBarModal extends StatelessWidget {
     super.key,
     required this.image,
   });
-  String image;
+  final String image;
   @override
   Widget build(BuildContext context) {
     return Bounceable(

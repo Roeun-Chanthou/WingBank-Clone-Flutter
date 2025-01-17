@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:wing_bank/constants/theme.dart';
-import 'package:wing_bank/data/data_source/item_other.dart';
+
+import '../../../../data/data_source/list_country.dart';
 
 class Postpaid extends StatelessWidget {
   const Postpaid({super.key});
@@ -9,10 +11,8 @@ class Postpaid extends StatelessWidget {
   Widget build(BuildContext context) {
     final screeHeight = MediaQuery.of(context).size.height;
     final screenWidth = MediaQuery.of(context).size.width;
-    final responsiveFont = screenWidth * 0.035;
 
     return Scaffold(
-      // backgroundColor: BackgroundColor.mainColor,
       appBar: AppBar(
         backgroundColor: BackgroundColor.mainColor,
         title: const Text(
@@ -112,56 +112,43 @@ class Postpaid extends StatelessWidget {
                       topRight: Radius.circular(20),
                     ),
                   ),
-                  child: SingleChildScrollView(
-                    padding: const EdgeInsets.only(bottom: 40, top: 8),
-                    scrollDirection: Axis.vertical,
-                    physics: const AlwaysScrollableScrollPhysics(),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: List.generate(items.length, (index) {
-                        return Column(
+                  child: ListView.builder(
+                    padding: EdgeInsets.only(
+                      bottom: 20.sp,
+                    ),
+                    physics: AlwaysScrollableScrollPhysics(),
+                    shrinkWrap: true,
+                    itemCount: countryCodes.length,
+                    itemBuilder: (context, index) {
+                      var item = countryCodes[index];
+                      var country = Country.fromJson(item);
+                      return Padding(
+                        padding: EdgeInsets.symmetric(vertical: 8.sp),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            InkWell(
-                              onTap: () {},
-                              child: SizedBox(
-                                height: 40,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 35,
-                                      height: 35,
-                                      padding: const EdgeInsets.all(5),
-                                      decoration: const BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        color: Colors.blue,
-                                      ),
-                                      child: CircleAvatar(
-                                        radius: 15,
-                                        backgroundImage: AssetImage(
-                                          items[index].imagePath,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 10),
-                                    Text(
-                                      items[index].text,
-                                      style: TextStyle(
-                                        fontSize: responsiveFont,
-                                      ),
-                                    ),
-                                  ],
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 16.sp,
+                                  backgroundImage: AssetImage(
+                                    "assets/country/${country.iso}.png",
+                                  ),
                                 ),
-                              ),
+                                SizedBox(width: 15.sp),
+                                Text(country.name),
+                              ],
                             ),
-                            Divider(
-                              color: Colors.grey[900],
-                              thickness: 0.1,
+                            SizedBox(height: 12.sp),
+                            Container(
+                              height: 3.sp,
+                              color: Colors.grey[400],
                             ),
                           ],
-                        );
-                      }),
-                    ),
+                        ),
+                      );
+                    },
                   ),
                 ),
               ),

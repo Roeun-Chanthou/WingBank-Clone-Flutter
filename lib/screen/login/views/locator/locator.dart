@@ -7,12 +7,12 @@ import 'package:wing_bank/constants/theme.dart';
 import '../../../../data/data_source/language_data.dart';
 import '../../../../logic/language_logic.dart';
 
-class Locator extends StatefulWidget {
+class MyLocation extends StatefulWidget {
   @override
-  _LocatorState createState() => _LocatorState();
+  _MyLocationState createState() => _MyLocationState();
 }
 
-class _LocatorState extends State<Locator> {
+class _MyLocationState extends State<MyLocation> {
   late GoogleMapController mapController;
 
   LatLng _initialCameraPosition =

@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:wing_bank/constants/theme.dart';
 import 'package:wing_bank/screen/login/home/%20main/show_info_dialog.dart';
 import 'package:wing_bank/screen/login/page/more/register_new_acc.dart';
-import 'package:wing_bank/screen/login/page/more/signin.dart';
+
+import '../../page/login_screen/signin.dart';
 
 class BuildSliverAppBar extends StatelessWidget {
   const BuildSliverAppBar({super.key});

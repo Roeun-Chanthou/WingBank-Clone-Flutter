@@ -1,22 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:wing_bank/constants/theme.dart';
 import 'package:wing_bank/logic/language_logic.dart';
-import 'package:wing_bank/screen/login/home/%20main/splash_screen.dart';
+
+import 'screen/login/home/ main/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  final SharedPreferences prefs = await SharedPreferences.getInstance();
+  final bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
+
   runApp(
     ChangeNotifierProvider(
       create: (context) => LanguageLogic(),
-      child: const MyApp(),
+      child: MyApp(isLoggedIn: isLoggedIn),
     ),
   );
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final bool isLoggedIn;
+
+  const MyApp({super.key, required this.isLoggedIn});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +41,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           color: BackgroundColor.mainColor,
           themeMode: ThemeMode.dark,
-          home: const SplashScreen(),
+          home: SplashScreen(isLoggedIn: isLoggedIn),
         );
       },
     );

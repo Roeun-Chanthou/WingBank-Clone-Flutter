@@ -6,8 +6,7 @@ import 'package:wing_bank/logic/language_logic.dart';
 import 'package:wing_bank/screen/login/views/about/about.dart';
 import 'package:wing_bank/screen/login/views/contact_us/contact_us.dart';
 import 'package:wing_bank/screen/login/views/faqs/faqs.dart';
-import 'package:wing_bank/screen/login/views/locator/locator.dart'
-    as locator_view;
+import 'package:wing_bank/screen/login/views/locator/locator.dart';
 import 'package:wing_bank/screen/login/views/refe_friend/refe_friend.dart';
 import 'package:wing_bank/screen/login/views/settings/setting.dart';
 import 'package:wing_bank/screen/login/views/term_condition/term_condition.dart';
@@ -21,7 +20,7 @@ class Itemdrawer extends StatefulWidget {
 
 class _ItemdrawerState extends State<Itemdrawer> {
   LanguageData _language = LanguageData();
-  @override
+
   Widget build(BuildContext context) {
     _language = context.watch<LanguageLogic>().language;
     return Column(
@@ -83,7 +82,7 @@ class _ItemdrawerState extends State<Itemdrawer> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => locator_view.Locator(),
+                builder: (context) => MyLocation(),
               ),
             );
           },
@@ -218,6 +217,7 @@ class _ItemdrawerState extends State<Itemdrawer> {
             ),
           ),
         ),
+        //
         GestureDetector(
           onTap: () {
             Navigator.push(

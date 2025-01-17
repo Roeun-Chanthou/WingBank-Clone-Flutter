@@ -106,10 +106,18 @@ class _FreeCashOutState extends State<FreeCashOut> {
                   ),
                   child: Row(
                     children: [
-                      Icon(
-                        Icons.question_mark_outlined,
-                        size: 18.sp,
-                        color: Colors.white,
+                      Container(
+                        width: 25,
+                        height: 25,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(
+                          Icons.question_mark_outlined,
+                          size: 16.sp,
+                          color: Colors.grey.shade400,
+                        ),
                       ),
                       SizedBox(width: 1.w),
                       Column(

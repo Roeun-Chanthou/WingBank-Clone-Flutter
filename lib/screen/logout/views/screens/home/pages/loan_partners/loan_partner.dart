@@ -21,7 +21,7 @@ class _LoanPartnerState extends State<LoanPartner> {
       body: Container(
         width: 100.w,
         height: 100.h,
-        color: Colors.grey.shade600,
+        color: Colors.grey.shade500,
         padding: EdgeInsets.symmetric(
           horizontal: 16.sp,
           vertical: 20.sp,
@@ -36,7 +36,7 @@ class _LoanPartnerState extends State<LoanPartner> {
                   children: [
                     Center(
                       child: Padding(
-                        padding: EdgeInsets.all(12.sp),
+                        padding: EdgeInsets.all(10.sp),
                         child: Text(
                           'We are sorry',
                           style: TextStyle(
@@ -54,17 +54,44 @@ class _LoanPartnerState extends State<LoanPartner> {
                     ),
                     Padding(
                       padding: EdgeInsets.only(
-                        left: 20.sp,
-                        right: 20.sp,
+                        left: 18.sp,
+                        right: 18.sp,
                         bottom: 30.sp,
                         top: 12.sp,
                       ),
-                      child: Text(
-                        "Your area is not applicable for loan request. Stay tune! For more detail pleas contact our call center via 023 999 989 or 012 999 489.",
-                        style: TextStyle(
-                          fontSize: 15.sp,
-                          color: Colors.grey.shade700,
-                        ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Your area is not applicable for loan request. Stay tune! For more detail pleas contact our",
+                            style: TextStyle(
+                              fontSize: 16.sp,
+                              color: Colors.grey.shade700,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "call center via ",
+                              ),
+                              Text(
+                                "023 999 989 ",
+                                style: TextStyle(
+                                  color: Colors.blue.shade700,
+                                  fontSize: 16.sp,
+                                ),
+                              ),
+                              Text("or "),
+                              Text(
+                                "012 999 489",
+                                style: TextStyle(
+                                  color: Colors.blue.shade700,
+                                  fontSize: 16.sp,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   ],
