@@ -6,6 +6,9 @@ import 'package:flutter_bounceable/flutter_bounceable.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:wing_bank/screen/login/page/login_screen/signin.dart';
+import 'package:wing_bank/screen/login/views/about/about.dart';
+import 'package:wing_bank/screen/login/views/contact_us/contact_us.dart';
+import 'package:wing_bank/screen/login/views/faqs/faqs.dart';
 
 import '../../../../data/models/slider.dart';
 import '../../home/ main/show_info_dialog.dart';
@@ -206,12 +209,22 @@ class _LoginScreenState extends State<LoginScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    "FAQs",
-                    style: TextStyle(
-                      fontSize: 15.sp,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue.shade600,
+                  Bounceable(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => FAQs(),
+                        ),
+                      );
+                    },
+                    child: Text(
+                      "FAQs",
+                      style: TextStyle(
+                        fontSize: 15.sp,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue.shade600,
+                      ),
                     ),
                   ),
                   Container(
@@ -220,12 +233,22 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 25,
                     color: Colors.black,
                   ),
-                  Text(
-                    "Contact Us",
-                    style: TextStyle(
-                      fontSize: 15.sp,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue.shade600,
+                  Bounceable(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ContactUs(),
+                        ),
+                      );
+                    },
+                    child: Text(
+                      "Contact Us",
+                      style: TextStyle(
+                        fontSize: 15.sp,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue.shade600,
+                      ),
                     ),
                   ),
                   Container(
@@ -234,12 +257,22 @@ class _LoginScreenState extends State<LoginScreen> {
                     height: 25,
                     color: Colors.black,
                   ),
-                  Text(
-                    "About Us",
-                    style: TextStyle(
-                      fontSize: 15.sp,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue.shade600,
+                  Bounceable(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => About(),
+                        ),
+                      );
+                    },
+                    child: Text(
+                      "About Us",
+                      style: TextStyle(
+                        fontSize: 15.sp,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue.shade600,
+                      ),
                     ),
                   ),
                 ],

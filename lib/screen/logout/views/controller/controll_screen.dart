@@ -34,6 +34,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       backgroundColor: BackgroundColor.mainColor,
       body: IndexedStack(
+        
         index: _currentIndex,
         children: [
           const HomeScreen(),

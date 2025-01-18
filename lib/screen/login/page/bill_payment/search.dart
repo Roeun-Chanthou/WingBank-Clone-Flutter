@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:wing_bank/screen/login/page/more/register_new_acc.dart';
 import 'package:wing_bank/screen/login/page/more/utilities.dart';
-
 
 class SearchHeader extends StatelessWidget {
   const SearchHeader({super.key});
@@ -48,14 +46,7 @@ class SearchHeader extends StatelessWidget {
             ),
             const Spacer(),
             IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const RegisterNewAccount(),
-                  ),
-                );
-              },
+              onPressed: () {},
               icon: Icon(
                 Icons.qr_code_2,
                 color: Colors.grey[700],

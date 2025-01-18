@@ -71,7 +71,6 @@ class ItemFAQs extends StatelessWidget {
         ),
 
         SizedBox(height: 2.h),
-        // Title
         Text(
           _language.five,
           style: TextStyle(
@@ -86,7 +85,6 @@ class ItemFAQs extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp),
         ),
         SizedBox(height: 2.h),
-        // Title
         Text(
           _language.six,
           style: TextStyle(
@@ -116,7 +114,6 @@ class ItemFAQs extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp),
         ),
         SizedBox(height: 2.h),
-        // Title
         Text(
           _language.eight,
           style: TextStyle(
@@ -131,7 +128,6 @@ class ItemFAQs extends StatelessWidget {
           style: TextStyle(fontSize: 16.sp),
         ),
         SizedBox(height: 2.sp),
-        // Title
         Text(
           _language.nine,
           style: TextStyle(

@@ -24,7 +24,7 @@ class TopBody extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             height: 16.h,
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Colors.grey.shade200,
               borderRadius: BorderRadius.circular(15),
               image: const DecorationImage(
                 image: AssetImage("assets/images/wingbankfield.png"),

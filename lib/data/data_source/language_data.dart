@@ -1,4 +1,5 @@
 class LanguageData {
+  String get languageSelection => "Language Selection";
   String get home => "Home";
   String get referFriends => "Refer Friends";
   String get locator => "Locator";
@@ -322,6 +323,8 @@ class Khmer implements LanguageData {
   String get loanDetailAfter =>
       "ដាក់ពាក្យសុំប្រាក់កម្ចីឌីជីថល ការអនុម័តភ្លាមៗ។ មិនមានពេលវេលាការពារ។ ដាក់ពាក្យសុំប្រាក់កម្ចីឌីជីថល ការអនុម័តភ្លាមៗ។ មិនមានពេលវេលាការពារ។ ដាក់ពាក្យសុំប្រាក់កម្ចីឌីជីថល ការអនុម័តភ្លាមៗ។ មិនមានពេលវេលាការពារ។";
   String get aboutUs => "អំពីយើង";
+
+  String get languageSelection => "ផ្លាស់ប្តូរភាសា";
 }
 
 class China implements LanguageData {
@@ -483,4 +486,5 @@ class China implements LanguageData {
   String get loanDetailAfter =>
       "申请数字化贷款，立即批准，无需等待时间。申请数字化贷款，立即批准，无需等待时间。申请数字化贷款，立即批准，无需等待时间。";
   String get aboutUs => "关于";
+  String get languageSelection => "高棉语";
 }

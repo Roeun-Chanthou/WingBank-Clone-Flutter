@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:wing_bank/screen/login/page/more/register_new_acc.dart';
 
 class CardBottom extends StatelessWidget {
   const CardBottom({super.key});
@@ -24,14 +23,7 @@ class CardBottom extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const RegisterNewAccount(),
-                  ),
-                );
-              },
+              onPressed: () {},
               icon: Icon(
                 Icons.arrow_forward_ios,
                 size: 18.sp,

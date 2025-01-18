@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:wing_bank/logic/language_logic.dart';
 import 'package:wing_bank/data/data_source/language_data.dart';
+import 'package:wing_bank/logic/language_logic.dart';
 
 class SelectLang extends StatefulWidget {
   const SelectLang({super.key});
@@ -20,7 +20,7 @@ class _SelectLangState extends State<SelectLang> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Language Selection'),
+        title: Text(_language.languageSelection),
       ),
       body: Container(
         color: Colors.grey.shade200,
