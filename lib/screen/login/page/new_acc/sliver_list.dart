@@ -42,7 +42,7 @@ class SliverListItem extends StatelessWidget {
             color: Colors.white,
             bgColor: Colors.blue.shade600,
             icon: "assets/svg/Saving Account Icon.png",
-            title: "Save For Goal",
+            title: "Saving Accunt",
             datail:
                 "Save for anything you want and earn interest rate up to 5.00% p.a. plus a",
           ),
@@ -53,7 +53,7 @@ class SliverListItem extends StatelessWidget {
             color: Colors.white,
             bgColor: Colors.orange,
             icon: "assets/svg/Saving Account Icon.png",
-            title: "Save For Goal",
+            title: "Current Account",
             datail:
                 "Save for anything you want and earn interest rate up to 5.00% p.a. plus a",
           ),

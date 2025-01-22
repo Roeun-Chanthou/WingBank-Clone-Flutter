@@ -78,7 +78,7 @@ class _FreeCashOutState extends State<FreeCashOut> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'FREE CASG IYUT PACKAGE',
+                  'FREE CASH OUT PACKAGE',
                   style: TextStyle(
                     fontSize: 19.sp,
                     fontWeight: FontWeight.bold,

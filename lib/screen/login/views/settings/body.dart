@@ -124,20 +124,20 @@ class _BodySettingState extends State<BodySetting> {
               color: Colors.grey[200],
             ),
           ),
-          _buildLogoutEnableClick(),
+          _buildLogoutEnableClick(_language),
           SizedBox(height: 15.sp),
         ],
       ),
     );
   }
 
-  Widget _buildLogoutEnableClick() {
+  Widget _buildLogoutEnableClick(LanguageData _language) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 15.sp, vertical: 10.sp),
       child: Row(
         children: [
           Text(
-            "Logout",
+            _language.logout,
             style: TextStyle(
               fontSize: 16.sp,
             ),

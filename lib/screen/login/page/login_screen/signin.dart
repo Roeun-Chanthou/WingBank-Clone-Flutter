@@ -205,14 +205,12 @@ class _SigninState extends State<Signin> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: _isPhoneValid
                       ? Colors.blue.shade700
-                      : Colors.blue.withOpacity(
-                          0.3,
-                        ),
+                      : Colors.blue.shade100,
                 ).copyWith(
                   backgroundColor: WidgetStateProperty.resolveWith<Color>(
                     (Set<WidgetState> states) {
                       if (states.contains(WidgetState.disabled)) {
-                        return Colors.blue.withOpacity(0.3);
+                        return Colors.blue.shade100;
                       }
                       return Colors.blue.shade700;
                     },
